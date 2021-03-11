@@ -51,3 +51,28 @@ The object detection and recognition results of the 6 objects of interest, using
 
 
 # 6. Conclusion
+
+We have demonstrated the process of selecting and implementing applicable image stitching and object detection techniques in order to identify objects of interest in the scene images as well as the panorama of stitched images. This process involves the following steps:
+
+
+* Acquiring suitable imagery data, consisting of scene images and template images of the objects of interest.
+
+* Adapting image stitching MATLAB functionalities to construct a scene panorama by stitching the acquired ordered images together
+* Adaptive object detection and recognition MATLAB functionalities to try to detect and match each template of the 6 objects of interest in the 9 acquired scene images as well as in the constructed panaorama image.
+* Processing the input data and generating the desired results
+* Analyzing the experimental results in order to assess the performance of the applied algorithms.
+
+Based on the limited experimental results, we conclude the following:
+
+* Feature-based image stitching and object detection methods are generally robust to changes in scale, orientation and illumination between the different images. 
+* The implemented feature-based object detector is also robust to partial occlusion of the objects of interest. 
+* Despite their advantages, the implemented feature-based methods are not without limitations. 
+* As observed in the figures above, the stitched panorama of the scene images suffers from minor mis-alignment and the some of the objects of interest were not correctly detected in the scene or the panorama image. 
+* These deficiencies are likely due to the lack of good matched features in the scene or template images. As such, an insufficient number of good and distinctive features can be found in images of smooth surfaces, such as book covers, but they are more abundant in images of textured surfaces.
+
+Potential future work may include the following investigations:
+
+* Apply blending in order to improve the quality of the panorama image by reducing the undesirable boundary artifacts of the stitched images.
+* Explore algorithms that can handle low-textured or smooth surface, shiny or glared surfaces. Most existing feature-based approaches sometimes fail in finding meaningful features on such surfaces. For such surfaces, one may apply a feature detector to extract key points on edges and corners (less sensitive to glare) instead of a detector that typically extracts interest points on blob-like structures (more sensitive to glare).
+
+
