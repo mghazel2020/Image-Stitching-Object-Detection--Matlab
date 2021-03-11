@@ -35,10 +35,19 @@ We also acquired 9 ordered scene images according the the experimental setup des
 
 # 4. Approach
 
+The implemented approach is two folds:
 
+1. Apply MATLAB image backprojection and stitching functionalities to stitch the 9 acquired scene images together and construct a scene panorama
+2. Apply MATLAB image feature detection and matching in order to detect and recognize the temples of the 6 objects of interest in each of the acquired 9 scene images as well as the constructed scene panorama.
 
 # 5. Sample Results
 
+The object detection and recognition results of the 6 objects of interest, using the 9 acquired scene images, are illustrated in the next figure.
+<img src="figures/object-detection-results-from-scene-images.jpg" width="1000">
+
+The object detection and recognition results of the 6 objects of interest, using the constructed scene panorama image, are illustrated in the next figure.
+
+<img src="figures/object-detection-results-from-constructed-panorama.jpg" width="1000">
 
 
 # 6. Conclusion
