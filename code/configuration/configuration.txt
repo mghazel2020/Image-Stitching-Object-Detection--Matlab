@@ -1,0 +1,82 @@
+#===========================================================================
+# Project: Zebra Technologies - Homework Assignment
+# File: configurations.txt
+# Author: Mohsen Ghazel 
+# Date: November 23, 2018
+#===========================================================================
+# Guideline: 
+#===========================================================================
+# - Do do not need to edit this file but you may change some of the 
+%   user preferences:
+#--------------------------------------------------------------------------
+# 1) If you want to process a different dataset, you can edit the 
+#    Input/Output Folder Preferences
+#--------------------------------------------------------------------------
+# 2) If you want to experiment with different feature detectors/descriptors
+     then you can edit the Feature Detection and Matching Preferences
+#--------------------------------------------------------------------------
+# 2) If you want to visualize and save intermediate results then you can 
+#    Visualization Preferences
+#===========================================================================
+# Copyright: (c) Zebra Technologies (2018)
+#===========================================================================
+#===========================================================================
+# 1) Input/Output Folder Preferences
+#===========================================================================
+#--------------------------------------------------------------------------
+# sceneImagesFolder: 
+#--------------------------------------------------------------------------
+# The full or relative path of the folder containing the 
+# multiple scene images to be stitched together
+--------------------------------------------------------------------------
+sceneImagesFolder = .\data\scene\
+#--------------------------------------------------------------------------
+# The full or relative path of the folder containing the 
+# multiple reference images to be detected in the scene images
+--------------------------------------------------------------------------
+referenceImagesFolder = .\data\template\
+#--------------------------------------------------------------------------
+# outputFolder: 
+#--------------------------------------------------------------------------
+# The full or relative path of the folder where the program output 
+# will be saved
+#--------------------------------------------------------------------------
+outputFolder = .\results\
+#--------------------------------------------------------------------------
+#===========================================================================
+# 2) Feature Detection and Matching Preferences
+#===========================================================================
+# featureDetector
+#--------------------------------------------------------------------------
+# Specify the featureDetector to be one of the following:
+#--------------------------------------------------------------------------
+# - SURF (default)
+# - BRISK
+# - FAST
+# - HARRIS
+#--------------------------------------------------------------------------
+featureDetector = SURF
+#--------------------------------------------------------------------------
+#===========================================================================
+# 3) Visualization Preferences
+#===========================================================================
+#--------------------------------------------------------------------------
+# displayResultsFlag
+#--------------------------------------------------------------------------
+# A flag to display all intermediate results
+# - displayIntermediateResultsFlag = 1: Display
+# - displayIntermediateResultsFlag = 0: Do not display (Default)
+#--------------------------------------------------------------------------
+displayIntermediateResultsFlag = 0
+--------------------------------------------------------------------------
+# saveIntermediateResultsFlag
+#--------------------------------------------------------------------------
+# A flag to save all intermediate results
+# - saveIntermediateResultsFlag = 1: Save (Default)
+# - saveIntermediateResultsFlag = 0: Do not save
+#--------------------------------------------------------------------------
+saveIntermediateResultsFlag = 1
+#--------------------------------------------------------------------------
+#===========================================================================
+# 				END OF FILE 
+#===========================================================================
