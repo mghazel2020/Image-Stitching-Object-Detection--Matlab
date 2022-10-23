@@ -1,14 +1,15 @@
-# Image-Stitching-Object-Detection--Matlab
+## Image Stitching and Object Detection & Recognition using Matlab
 
+<img src="figures/Image-Stitching--MATLAB.jpg" width="600">
 
-# 1. Objective
+## 1. Objective
 
 The objective of this project is to demonstrate two important computer vision functionalties:
 
 * Panorama construction via image stitching and mosaicking
-* Object detectuon and recognition via and template feature matching.
+* Object detection and recognition via and template feature matching.
 
-# 2. Experimental Setup
+## 2. Experimental Setup
 
 In order to implement the desired image stitching and object recognition algorithms, we setup the following scenarios:
 
@@ -24,39 +25,34 @@ In order to implement the desired image stitching and object recognition algorit
   * At least part of one object appears in 2 consecutive images
   * The images are ordere from left-to-right.
 
-# 3. Collected Data
+## 3. Collected Data
 
 The template images of the 6 objects of interest are illustrated in the next figure.
 <img src="figures/templates-6-objects-interest.jpg" width="1000">
 
 We also acquired 9 ordered scene images according the the experimental setup described in the previous section. 
-
 <img src="figures/acquired-9-consecutive-scene-images.jpg" width="1000">
 
-# 4. Approach
+## 4. Approach
 
 The implemented approach is two folds:
 
 1. Apply MATLAB image backprojection and stitching functionalities to stitch the 9 acquired scene images together and construct a scene panorama
 2. Apply MATLAB image feature detection and matching in order to detect and recognize the temples of the 6 objects of interest in each of the acquired 9 scene images as well as the constructed scene panorama.
 
-# 5. Sample Results
+## 5. Sample Results
 
 The object detection and recognition results of the 6 objects of interest, using the 9 acquired scene images, are illustrated in the next figure.
 <img src="figures/object-detection-results-from-scene-images.jpg" width="1000">
 
 The object detection and recognition results of the 6 objects of interest, using the constructed scene panorama image, are illustrated in the next figure.
-
 <img src="figures/object-detection-results-from-constructed-panorama.jpg" width="1000">
 
-
-# 6. Conclusion
+## 6. Conclusion
 
 We have demonstrated the process of selecting and implementing applicable image stitching and object detection techniques in order to identify objects of interest in the scene images as well as the panorama of stitched images. This process involves the following steps:
 
-
 * Acquiring suitable imagery data, consisting of scene images and template images of the objects of interest.
-
 * Adapting image stitching MATLAB functionalities to construct a scene panorama by stitching the acquired ordered images together
 * Adaptive object detection and recognition MATLAB functionalities to try to detect and match each template of the 6 objects of interest in the 9 acquired scene images as well as in the constructed panaorama image.
 * Processing the input data and generating the desired results
@@ -75,4 +71,5 @@ Potential future work may include the following investigations:
 * Apply blending in order to improve the quality of the panorama image by reducing the undesirable boundary artifacts of the stitched images.
 * Explore algorithms that can handle low-textured or smooth surface, shiny or glared surfaces. Most existing feature-based approaches sometimes fail in finding meaningful features on such surfaces. For such surfaces, one may apply a feature detector to extract key points on edges and corners (less sensitive to glare) instead of a detector that typically extracts interest points on blob-like structures (more sensitive to glare).
 
-
+## References: 
+1. MATHWorks. Feature Based Panoramic Image Stitching. TRetrieved from: https://www.mathworks.com/help/vision/ug/feature-based-panoramic-image-stitching.html (October 4th, 2022).
