@@ -1,6 +1,6 @@
 ## Image Stitching and Object Detection & Recognition using Matlab
 
-<img src="figures/Image-Stitching--MATLAB.jpg" width="600">
+<img src="figures/Image-Stitching--MATLAB.jpg" width="500">
 
 ## 1. Objective
 
