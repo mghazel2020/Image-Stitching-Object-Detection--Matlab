@@ -72,4 +72,4 @@ Potential future work may include the following investigations:
 * Explore algorithms that can handle low-textured or smooth surface, shiny or glared surfaces. Most existing feature-based approaches sometimes fail in finding meaningful features on such surfaces. For such surfaces, one may apply a feature detector to extract key points on edges and corners (less sensitive to glare) instead of a detector that typically extracts interest points on blob-like structures (more sensitive to glare).
 
 ## References: 
-1. MATHWorks. Feature Based Panoramic Image Stitching. TRetrieved from: https://www.mathworks.com/help/vision/ug/feature-based-panoramic-image-stitching.html (October 4th, 2022).
+1. MATHWorks. Feature Based Panoramic Image Stitching. Retrieved from: https://www.mathworks.com/help/vision/ug/feature-based-panoramic-image-stitching.html (October 4th, 2022).
