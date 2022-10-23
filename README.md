@@ -43,7 +43,7 @@ The implemented approach is two folds:
 ## 5. Sample Results
 
 The object detection and recognition results of the 6 objects of interest, using the 9 acquired scene images, are illustrated in the next figure.
-<img src="figures/object-detection-results-from-scene-images.jpg" width="800">
+<img src="figures/object-detection-results-from-scene-images.jpg" width="1000">
 
 The object detection and recognition results of the 6 objects of interest, using the constructed scene panorama image, are illustrated in the next figure.
 <img src="figures/object-detection-results-from-constructed-panorama.jpg" width="1000">
